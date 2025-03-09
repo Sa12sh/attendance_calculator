@@ -1,0 +1,292 @@
+body{
+    margin: 0;
+    background-color: rgb(219, 218, 218);
+}
+.header-div{
+    background-color: rgb(21, 182, 172);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to bottom, #00b7ff, #00ff4c);
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom:3px solid rgb(0, 0, 0);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.webname{
+    font-family: "Courgette", cursive;
+    margin-bottom: 0;
+}
+.cmpname{
+    font-family: "Rethink Sans", sans-serif;
+   
+    margin: 0;
+    font-size: 15px;
+}
+.cmpname-div{
+   
+    margin-left: 155px;
+}
+.input-div{
+    margin-top: 200px;
+    margin-left: 20%;
+    margin-right: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+   
+}
+.held-class-div,.attended-class-div{
+    font-family: "Courgette", cursive;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.input-box{
+    height:100%;
+    font-family: "Courgette", cursive;
+    border-radius: 6px;
+    border-color: rgb(1, 111, 255);
+    border-width: 3px;
+    background-color: rgb(194, 193, 193);
+    color: rgb(253, 66, 66);
+    font-weight: 300;
+    font-size: 100%;
+}
+.attended-input-div,.held-input-div{
+    display: flex;
+    justify-content: center;
+}
+.slider-div{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+.slider-input{
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 200px;
+    height: 10px;
+    background: linear-gradient(to right ,red,rgb(0, 255, 68));
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+.slider-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #000000; 
+    border-radius: 50%; 
+    cursor: pointer;
+    
+}
+.slider-input:hover::-webkit-slider-thumb {
+    background: #ffffff;
+    border: 2px solid black;
+}
+.show-percentage{
+    padding: none;
+    width: 3%;
+    background-color: transparent;
+    border-width: 0.5px;
+    border-radius: 8px;
+    color: black;
+    font-weight: 500;
+    font-family: "Courgette", cursive;
+    font-size: 14px;
+    min-width: 50px;
+}
+.show-percentage::placeholder{
+    color: black;
+    font-weight: 500;
+    font-family: "Courgette", cursive;
+    font-size: 14px;
+}
+.caliculate-button-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.3%;
+}
+.caliculate-button{
+    background-color: rgb(255, 191, 0);
+    border: none;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 20px;
+    font-family: "Courgette", cursive;
+}
+.caliculate-button:hover{
+    cursor: pointer;
+    background-color: rgb(46, 46, 46);
+    border: 3px solid rgb(255, 191, 0);  
+    color: rgb(255, 191, 0);
+}
+.caliculator-div{
+    margin-top: 6%;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    min-width: 300px;
+}
+.caliculator-heading-div{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    font-family: "Courgette", cursive;
+    font-size: 25px;
+    font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.result{
+    border: 3px solid black;
+    border-left: none;
+    font-family: "Courgette", cursive;
+    border-right: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+    color: rgb(255, 98, 0);
+    font-weight: 600;
+}
+.result:hover{
+    cursor: text;
+}
+.caliculator-botton-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+    margin: 2%;
+}
+.caliculator-button{
+    padding: 3%;
+    border-radius: 6px;
+    font-family: "Courgette", cursive;
+    background-color: rgb(123, 122, 122);
+}
+.c1{
+    background-color: rgb(254, 236, 92);
+}
+.c3{
+    background-color: rgb(3, 255, 158);
+}
+.c2{
+    background-color: rgb(117, 194, 239);
+}
+.caliculator-button:hover{
+    box-shadow: 0px 0.5px 20px rgb(0, 17, 255);
+    cursor: pointer;
+    
+}
+.js-caliculated-div{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.caliculated-percent-div{
+    
+    display: flex; 
+}
+.percent-text-div{
+    font-family: "Courgette", cursive;
+    font-size: 20px;
+}
+.percentage-div{
+    font-family: "Courgette", cursive;
+    font-size: 25px;
+    margin-left: 15px;
+}
+.claiculated-remaining{
+    font-family: "Courgette", cursive;
+    font-size: 20px;
+    margin-top: 2%;
+    font-weight: 600;
+}
+.caliculated-green{
+    color: rgb(1, 255, 69);
+    -webkit-text-stroke: 1px rgb(15, 104, 64); 
+}
+.caliculated-red{
+    color: red;
+    -webkit-text-stroke: 1px rgb(146, 3, 3); 
+}
+.comment-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-family: "Courgette", cursive;
+    
+    
+}
+.comment-inner{
+    border: 3px solid rgb(242, 100, 226);
+    padding: 8px;
+    border-radius: 7px;
+}
+.comment-heading-div{
+    align-items: center;
+    font-size: 35px;
+    padding: 0;
+    color: rgb(0, 72, 255);
+}
+.comment-heading-div:hover{
+    color: rgb(255, 0, 0);
+    
+    border-radius: 10px;
+    cursor: pointer;
+}
+.comment-input{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-top: 30px;
+    gap: 30px;
+    column-gap: 1px;
+}
+.commenter-name{
+    width: 350px;
+    padding: 6px;
+    border-radius: 6px;
+}
+.comment{
+    padding: 10px;
+    padding-bottom: 90px;
+    border-radius: 6px;
+    
+}
+.submit-button{
+    margin-top: 15px;
+    margin-left: 75%;
+    background-color: rgb(255, 166, 0);
+    border: none;
+    padding: 7px 25px 7px 25px;
+    font-family: "Courgette", cursive;
+    font-weight: 600;
+    border-radius: 15px;
+}
+.submit-button:hover{
+    background-color:rgb(253, 191, 76) ;
+    cursor: pointer;
+}
+.thank-you{
+    display: flex;
+    justify-content: center;
+    margin-top: -27px;
+}
+

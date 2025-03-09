@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attendcaller</title>
+    <link rel="stylesheet" type="text/css" href="attend.css" >
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-div">
+        <h1 class="webname">Attendcaller</h1>
+        <div class="cmpname-div">
+            <h3 class="cmpname">-S4V</h3>
+        </div>
+    </div>
+    <div class="input-div">
+        <div class="held-class-div">Held classes:</div>
+        <div class="held-input-div"><input class="input-box held-input-number" type="number" placeholder="Enter Held Class"></div>
+        <div class="attended-class-div">Attended classes:</div>
+        <div class="attended-input-div"><input class="input-box attended-input-number" type="number" placeholder="Enter Attended Class"></div>
+    </div>
+    <div class="slider-div">
+        <input type="range" class="slider-input" min="0" max="100" value="75">
+        <input type="number" class="show-percentage" placeholder="75%">
+    </div>
+    <div class="caliculate-button-div">
+        <button class="caliculate-button">Caliculate</button>
+    </div>
+    <div class="js-caliculated-div">
+        
+    </div>
+    <div class="caliculator-div">
+        <div class="caliculator-heading-div">
+            Caliculator
+        </div>
+        <div class="result">00000</div>
+        <div class="caliculator-botton-div">
+            <button class="caliculator-button c1" data-button-id="AC">AC</button>
+            <button class="caliculator-button c2" data-button-id="**">^</button>
+            <button class="caliculator-button c2" data-button-id="Ans">Ans</button>
+            <button class="caliculator-button c2" data-button-id="/">/</button>
+            <button class="caliculator-button" data-button-id="7">7</button>
+            <button class="caliculator-button" data-button-id="8">8</button>
+            <button class="caliculator-button" data-button-id="9">9</button>
+            <button class="caliculator-button c2" data-button-id="*">*</button>
+            <button class="caliculator-button" data-button-id="4">4</button>
+            <button class="caliculator-button" data-button-id="5">5</button>
+            <button class="caliculator-button" data-button-id="6">6</button>
+            <button class="caliculator-button c2" data-button-id="-">-</button>
+            <button class="caliculator-button" data-button-id="1">1</button>
+            <button class="caliculator-button" data-button-id="2">2</button>
+            <button class="caliculator-button" data-button-id="3">3</button>
+            <button class="caliculator-button c2" data-button-id="+">+</button>
+            <button class="caliculator-button" data-button-id="0">0</button>
+            <button class="caliculator-button" data-button-id=".">.</button>
+            <button class="caliculator-button c1" data-button-id="8882">&#8882;</button>
+            <button class="caliculator-button c3" data-button-id="=">=</button>
+        </div>
+    </div>
+    <div class="comment-div">
+        <div class="comment-inner">
+            <div class="comment-heading-div">Comment &#8681;</div>
+            <div class="comment-input-outer">
+                
+                    <div class="comment-input">
+                        <div class="name-text">Name:</div>
+                        <input name="name" type="text" class="commenter-name" placeholder="Enter your Name">
+                        <div class="comment-text">Comment:</div>
+                        <input name="comment" type="text" class="comment" placeholder="Enter your comment"></div>
+                        <button class="submit-button">Submit</button>
+                        <div class="thank-you-div">
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="attend.js"></script>
+</body>
+</html>
